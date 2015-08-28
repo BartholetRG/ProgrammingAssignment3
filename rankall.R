@@ -25,9 +25,6 @@ rankall <- function(outcome, num = "best") {
     ## split the data into dataframes corresponding to each state
     stateOutcomes <- split(data, data[, 2])
     ## note that the list of dataframes is now sorted alphabetically by state
-    
-    ## create an empty output data frame
-    output <- data.frame(hospital = character(0), state = character(0))
 
     ##----------------------------------
     ## if outcome is heart attack
